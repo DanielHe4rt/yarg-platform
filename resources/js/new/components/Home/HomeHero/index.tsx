@@ -4,6 +4,7 @@ import styles from "./hero.module.css";
 import Header from '@/new/components/Header';
 import { Github } from '@/new/components/Icons';
 import Button from '@/new/components/Button';
+import RotatingWords from '@/new/components/RotatingWords';
 
 const HomeHero: React.FC = () => {
   return <div className={styles.hero}>
@@ -13,7 +14,7 @@ const HomeHero: React.FC = () => {
       <div className={styles.about}>
         <div className={styles.title}>
           <div className={styles.titleStatic}>Play on</div>
-          <div className={styles.instrumentSection}>Pro Guitar</div>
+          <RotatingWords className={styles.instrumentSection} words={["Pro Guitar", "Pro Drums", "Vocal", "Keys", "Guitar", "Bass"]} intervalTime={2500} />
         </div>
 
         <div className={styles.buttons}>
