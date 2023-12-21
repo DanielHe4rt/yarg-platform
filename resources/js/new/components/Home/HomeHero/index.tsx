@@ -30,8 +30,26 @@ const HomeHero: React.FC = () => {
       </div>
 
       <div className={styles.video}>
+
+      <iframe
+        src={"https://www.youtube.com/embed/HuIqMeEZrmE"}
+        title="YARG Setlist: Wave 3 Trailer"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+
         <div className={styles.gem} data-color="green"></div>
         <div className={styles.gem} data-color="blue"></div>
+
+        <div className={styles.featureCard} data-position="left">
+          <div className={styles.featureTitle}>Song Formats</div>
+          <div className={styles.featureDescription}>.chart / .mid / CON files</div>
+        </div>
+
+        <div className={styles.featureCard} data-position="top">
+          <div className={styles.featureTitle}>Vocals</div>
+          <div className={styles.featureDescription}>Full solo and harmonies support, play with the full band experience</div>
+        </div>
       </div>
     </div>
 

@@ -78,6 +78,44 @@
     right: -85px;
 }
 
+.hero .video :is(iframe) {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--borderRadius);
+}
+
+.featureCard {
+    position: absolute;
+    padding: 25px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    max-width: 40%;
+}
+
+.featureCard .featureTitle {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.featureCard .featureDescription {
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.75;
+}
+
+.featureCard[data-position="left"] {
+    left: -5%;
+    top: 45%;
+}
+
+.featureCard[data-position="top"] {
+    left: 15%;
+    top: -5%;
+}
+
 @media only screen and (min-width: 1500px) {
     .hero .content {
         flex-direction: row;
@@ -105,5 +143,11 @@
     .hero .video .gem[data-color="blue"] {
         bottom: -105px;
         right: 40%;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .hero .featureCard {
+        display: none;
     }
 }
