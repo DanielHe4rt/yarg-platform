@@ -1,30 +1,13 @@
 import Footer from '@/new/components/Footer';
-import Header from '@/new/components/Header';
 import HomeHero from '@/new/components/Home/HomeHero';
+import NewsSection from '@/new/components/NewsSection';
 import React from 'react';
 
 export default function TestScreen() {
     return (<>
         <HomeHero />
         <div>
-            <h1>yargins</h1>
-            <h1>yargins</h1>
-            <h1>yargins</h1>
-            <h1>yargins</h1>
-            <h1>yargins</h1>
-            <h1>yargins</h1>
-            <h1>yargins</h1>
-            <h1>yargins</h1>
-            <h1>yargins</h1>
-            <h1>yargins</h1>
-            <h1>yargins</h1>
-            <h1>yargins</h1>
-            <h1>yargins</h1>
-            <h1>yargins</h1>
-            <h1>yargins</h1>
-            <h1>yargins</h1>
-            <h1>yargins</h1>
-            <h1>yargins</h1>
+            <NewsSection />
         </div>
         <Footer />
     </>);

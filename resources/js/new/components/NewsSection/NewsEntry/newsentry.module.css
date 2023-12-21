@@ -1,0 +1,135 @@
+.entry {
+    display: flex;
+    padding: 15px;
+    gap: 15px;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 23px;
+    transition: background 0.1s;
+}
+
+.entry:not([data-type="headline"]):hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.thumbnail {
+    width: 125px;
+    height: 105px;
+    background: #D9D9D9;
+    border-radius: var(--borderRadius);
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--borderRadius);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-grow: 1;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tag {
+    max-width: fit-content;
+    padding: 3px 10px;
+    border-radius: 50px;
+
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.tag[data-color="green"] {
+    background: #032215;
+    color: #77FFC3;
+}
+
+.tag[data-color="blue"] {
+    background: #072126;
+    color: #2ED9FF;
+}
+
+.tag[data-color="pink"] {
+    background: #261324;
+    color: #FF7CFA;
+}
+
+.date {
+    font-size: 12px;
+    color: #ACACAC;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.author {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+}
+
+.author .authorAvatar {
+    padding-left: 10px;
+    height: 25px;
+    display: flex;
+}
+
+.author .authorAvatar img {
+    height: 100%;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    margin-left: -10px;
+}
+
+.author .authorName {
+    font-size: 12px;
+    font-weight: 600;
+    color: #494949;
+}
+
+.author .authorName::before {
+    content: "By ";
+    font-weight: 500;
+}
+
+/* Headline */
+
+.entry[data-type="headline"] {
+    padding: 25px;
+    height: 200px;
+    color: #fff;
+    align-items: flex-end;
+    border-radius: var(--borderRadius);
+    background: linear-gradient(225deg, rgba(0, 0, 0, 0.00) -15%, #000 100%), var(--bannerImage, lightgray) 50% / cover no-repeat;
+}
+
+.entry[data-type="headline"] .thumbnail {
+    display: none;
+}
+
+.entry[data-type="headline"] .title {
+    font-size: 24px;
+    font-family: Red Hat Display;
+}
+
+.entry[data-type="headline"] .author .authorName {
+    color: #D8D8D8;
+}
+
+.entry[data-type="headline"] .author .authorName::before {
+    font-weight: 400;
+}
