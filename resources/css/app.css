@@ -9,6 +9,7 @@
 :root {
     --borderRadius: 8px;
     --blue: #2ED9FF;
+    --maxWidth: 1200px;
 
     --heroBackground: #060811;
     --headerBackground: #05060B;

@@ -1,0 +1,16 @@
+.title {
+    color: #5B5B5B;
+    font-family: Red Hat Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1em;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.title svg {
+    color: #F32B37;
+    height: 1em;
+}

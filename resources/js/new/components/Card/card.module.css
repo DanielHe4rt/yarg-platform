@@ -1,0 +1,11 @@
+.card {
+    border-radius: var(--borderRadius);
+    padding: 25px;
+    border: 1px solid #E7E7E7;
+
+    color: #7B7B7B;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

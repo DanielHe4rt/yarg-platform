@@ -1,0 +1,21 @@
+.content {
+    max-width: var(--maxWidth, 1200px);
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: auto 500px;
+    gap: 25px;
+    padding: 0px 5%;
+    box-sizing: content-box;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .content {
+        grid-template-columns: auto;
+    }
+}

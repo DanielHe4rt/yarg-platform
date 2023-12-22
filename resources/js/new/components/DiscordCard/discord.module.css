@@ -1,0 +1,30 @@
+.card {
+    padding: 25px;
+    background: linear-gradient(70deg, #3E4BE3 25%, transparent 70%), url(../../images/discord-card.png) right / cover no-repeat, #5865F2;
+    border-radius: var(--borderRadius);
+    padding-right: 45%;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.title {
+    font-family: Red Hat Display;
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.3em;
+}
+
+.button {
+    border-radius: 4px;
+    background: black;
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    justify-content: center;
+}
